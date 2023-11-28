@@ -3,24 +3,22 @@ import React from 'react'
 import Banner from './Banner'
 import Card from './Card'
 //images
-import canchasnoche from '../assets/canchasnoche.jpg'
-import trofeoimg from '../assets/trofeo2.jpg'
-import premios from '../assets/premios.jpg'
-import grupo from '../assets/grupo.jpg'
-import canchas from '../assets/canchas.jpg'
+import logo from "../assets/NexaCode/logo.png";
+import mision from "../assets/NexaCode/mision.jpg";
+import vision from "../assets/NexaCode/vision.jpg";
 import { motion } from 'framer-motion'
 
 function Servicios() {
   return (
     <section >
       <span id='services' className='anchor'></span>
-        <div className=' bg-black w-full h-[100px] text-white items-center flex justify-center uppercase font-semibold text-xl'>
+        <div className=' bg-black w-full h-[100px] text-blanco items-center flex justify-center uppercase font-semibold text-xl'>
             <motion.span 
             initial={{ translateY: 200 }}
             whileInView={{ translateY: 0 }}
             transition={{duration: 0.5, ease: 'easeInOut'}}
             viewport={{once: true}}
-            className='w-[80%] text-xl lg:text-2xl xl:text-3xl text-center border-b pb-5'>¿Qué ofrecemos?</motion.span>
+            className='w-[80%] text-lg lg:text-xl xl:text-2xl text-center border-b pb-5 text-blanco'>¿Quiénes Somos?</motion.span>
         </div>
         <div className='flex flex-col lg:flex-row items-center bg-black md:pt-10 p-5 gap-16 lg:gap-10 lg:px-10 justify-between xl:gap-32 pb-8 md:pb-20 '>
           <motion.div
@@ -29,9 +27,10 @@ function Servicios() {
           transition={{duration: 0.5, ease: 'easeInOut'}}
           viewport={{once: true}}
           className='bg-black text-white text-left flex flex-col gap-10 flex-1 overflow-hidden'>
-            <p>Nuestro club de pádel ofrece una amplia variedad de servicios para ustedes! Contamos con <span className='font-bold text-green-400 '>4 canchas profesionales</span> para alquilar y disfrutar de una partida con amigos o familiares. </p>
-            <p> Además, ofrecemos un <span className='font-bold text-green-400 '>bar donde podrás relajarte y disfrutar</span> de una bebida o un aperitivo después del juego. Disponemos de estacionamiento para que puedas dejar tu vehículo con tranquilidad mientras disfrutas de nuestras instalaciones.</p>
-            <p>Finalmente, <span className='font-bold text-green-400 '>organizamos torneos</span> regularmente para aquellos que buscan un desafío adicional y la oportunidad de competir con otros jugadores. ¡Te esperamos en nuestro club para disfrutar del mejor pádel!</p>
+            <p>NexaCode es una empresa líder en el campo de la tecnología de la información (TI) que se especializa en el desarrollo de proyectos de  
+              <span className='font-bold text-amarillo '> software personalizados y soluciones tecnológicas innovadoras. </span> </p> 
+              <p>Nuestra idea es proporcionar soluciones personalizadas en las áreas de <span className='font-bold text-amarillo '>desarrollo móvil y desarrollo web </span>s que permitan a las organizaciones prosperar en un mundo cada vez más impulsado por la tecnología. </p>
+              <p> Con una pasión por la excelencia en el desarrollo de software y la resolución de problemas tecnológicos, estamos comprometidos a ofrecer <span className='font-bold text-amarillo '> resultados excepcionales </span> a nuestros clientes y socios comerciales. </p> 
           </motion.div>
           <div className='lg:w-1/2 flex-1 bg-black lg:max-w-[557px] overflow-hidden'>
             <motion.div
@@ -39,7 +38,7 @@ function Servicios() {
             whileInView={{ translateY: 0 }}
             transition={{duration: 0.5, ease: 'easeInOut'}}
             viewport={{once: true}}>
-              <img className='lg:max-h-[371px] rounded-xl ' src={canchasnoche} alt="" />
+              <img className='w-3/6 lg:max-h-[371px] rounded-xl ' src={logo} alt="" />
             </motion.div>
           </div>
         </div>
@@ -52,30 +51,17 @@ function Servicios() {
             whileInView={{ translateY: 0 }}
             transition={{duration: 0.5, ease: 'easeInOut'}}
             viewport={{once: true}}>
-              <Card img={trofeoimg} titulo="Organizamos torneos de padel!" parrafo="Compite contra otros jugadores, mejora tus habilidades y diviértete en un ambiente amigable y deportivo. ¡No te lo pierdas!"/>
+              <Card img={mision} titulo="Misión" parrafo="En NexaCode, nos comprometemos a ser líderes en la industria de la tecnología de la información, proporcionando soluciones innovadoras y de alta calidad a nuestros clientes. A través de la excelencia en el desarrollo de software y la colaboración estratégica, creamos un impacto positivo en el mundo digital y contribuimos al éxito de nuestros socios comerciales."/>
             </motion.div>
             <motion.div
             initial={{ translateY: 200 }}
             whileInView={{ translateY: 0 }}
             transition={{duration: 0.5, ease: 'easeInOut'}}
             viewport={{once: true}}>
-              <Card img={premios} titulo="Premios en todas las categorias!" parrafo="¡En nuestro club, todos tienen la oportunidad de ganar! Ofrecemos una amplia variedad de premios en todas las categorías de nuestros torneos de pádel." />
-            </motion.div>
-            <motion.div
-            initial={{ translateY: 200 }}
-            whileInView={{ translateY: 0 }}
-            transition={{duration: 0.5, ease: 'easeInOut'}}
-            viewport={{once: true}}>
-              <Card img={grupo} titulo="Disfruta con amigos y familiares!" parrafo="¡Ven y disfruta de un día lleno de diversión en nuestro club! Juega al pádel, relájate en nuestro bar o simplemente pasa tiempo con tus seres queridos en un ambiente agradable y acogedor. ¡Te esperamos!"/>
+              <Card img={vision} titulo="Visión" parrafo="Nuestra visión en NexaCode es ser reconocidos globalmente como un referente en el desarrollo de proyectos de TI, con un enfoque destacado en el desarrollo web y móvil. Buscamos la excelencia en la programación e innovación en la resolución de problemas en estos campos específicos, trabajando en colaboración con nuestros clientes." />
             </motion.div>
           </div>
         </div>
-        <motion.img
-        initial={{ translateY: 200 }}
-        whileInView={{ translateY: 0 }}
-        transition={{duration: 0.5, ease: 'easeInOut'}}
-        viewport={{once: true}}
-         className='pt-10 rounded w-[90%] max-h-[530px] object-cover mx-auto xl:hidden' src={canchas} alt="" />
     </section>
   )
 }

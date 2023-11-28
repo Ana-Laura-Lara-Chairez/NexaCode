@@ -1,10 +1,12 @@
 import React, {useState, useEffect} from 'react'
 //images
-import greenimg from '../assets/dark-green-739780.jpg'
-import vtk from '../assets/logo-vitnik.svg'
-import rossetti from '../assets/Rossetti-logo-footer.png'
+import banner from '../assets/NexaCode/banner.jpg'
+import web from '../assets/NexaCode/web.jpg'
+import movil from '../assets/NexaCode/movil.jpg'
+import soluciones from '../assets/NexaCode/soluciones.jpg'
 
-const images = [vtk, rossetti]
+
+const images = [web, movil, soluciones]
 
 function Sponsor() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -17,9 +19,9 @@ function Sponsor() {
     }, [currentSlide]);
 
   return (
-    <div style={{backgroundImage:`url(${greenimg})`}} className='w-full h-[100px] bg-center bg-no-repeat bg-cover mt-5 flex justify-center items-center '>
+    <div style={{backgroundImage:`url(${banner})`}} className='w-full h-[230px] bg-center bg-no-repeat bg-cover flex justify-center items-center '>
         <img
-        className="w-[150px] h-12 object-contain"
+        className="w-[350px] h-25 object-contain"
         src={images[currentSlide]}
         alt={`Slide ${currentSlide + 1}`}
       />

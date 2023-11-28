@@ -9,6 +9,14 @@ module.exports = {
       screens: {
         'xl' : '1125px'
       },
+
+      colors: {
+        //paleta de colores NexaCode
+        'blanco': '#ffffff',
+        'negro': '#000000',
+        'azul': '#1C3144',
+        'amarillo': '#ECB84A',
+      },
     },
   },
   plugins: [],

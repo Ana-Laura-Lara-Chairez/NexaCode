@@ -6,9 +6,9 @@ function Card({ img , titulo ,parrafo}) {
         <div style={{backgroundImage: `url(${img})` , backgroundPositionY: "92%"}} className=' w-full h-2/3 bg-cover bg-no-repeat rounded'>
         </div>
         <div>
-            <p className='font-bold text-xl my-2'>{titulo}
+            <p className='font-bold text-xl my-2 text-amarillo'>{titulo}
             </p>
-            <p className='text-center text-gary-900 pt-2'>{parrafo}
+            <p className='text-center text-negro pt-2'>{parrafo}
             </p>
         </div>
     </div>
